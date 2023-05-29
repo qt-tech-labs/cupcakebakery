@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class=" supports-js supports-no-touch supports-csstransforms supports-csstransforms3d supports-fontface"
+    lang="vi">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+    }
+</style>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all .5s;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 780px;
+        transform: translatey(-30px);
+        transition: all .5s;
+    }
+
+    .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        text-align: center;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <%- include('../partials/banner'); %>
+        <div id="PageContainer" class="is-moved-by-drawer">
+            <main class="main-content" role="main">
+                <%- include('../partials/product_first'); %>
+                    <%- include('../partials/product_second'); %>
+                        <%- include('../partials/order'); %>
+                            <%- include('../partials/article'); %>
+                                <%- include('../partials/introduce'); %>
+            </main>
+        </div>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+        <%- include('../partials/modal'); %>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#home-main-slider").owlCarousel({
+            items: 1,
+            itemsDesktop: [1000, 1],
+            itemsDesktopSmall: [900, 1],
+            itemsTablet: [600, 1],
+            itemsMobile: false,
+            navigation: false,
+            pagination: true,
+            slideSpeed: 300,
+            autoPlay: true,
+            paginationSpeed: 400,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+        $("#home-main-slidermb").owlCarousel({
+            items: 1,
+            itemsDesktop: [1000, 1],
+            itemsDesktopSmall: [900, 1],
+            itemsTablet: [600, 1],
+            itemsMobile: false,
+            navigation: false,
+            pagination: true,
+            slideSpeed: 300,
+            autoPlay: true,
+            paginationSpeed: 400,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+        $(".owl-home-main-banners-slider-pd").owlCarousel({
+            items: 4,
+            itemsDesktop: [1000, 4],
+            itemsDesktopSmall: [900, 2],
+            itemsTablet: [600, 2],
+            itemsMobile: false,
+            navigation: false,
+            pagination: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            autoPlay: 5000,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+        $("#related-products-slider").owlCarousel({
+            items: 4,
+            itemsDesktop: [1000, 4],
+            itemsDesktopSmall: [900, 4],
+            itemsTablet: [768, 4],
+            itemsMobile: [480, 2],
+            navigation: true,
+            pagination: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+        $("#owl-home-main-banners-slider-art").owlCarousel({
+            items: 3,
+            itemsDesktop: [1000, 3],
+            itemsDesktopSmall: [900, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [480, 1],
+            navigation: true,
+            pagination: false,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            autoPlay: 5000,
+            navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        });
+
+        // $("#owl-home-main-banners-slider-ft").owlCarousel({
+        //     items: 1,
+        //     itemsDesktop: [1000, 1],
+        //     itemsDesktopSmall: [900, 1],
+        //     itemsTablet: [600, 1],
+        //     itemsMobile: false,
+        //     navigation: false,
+        //     pagination: true,
+        //     slideSpeed: 300,
+        //     paginationSpeed: 400,
+        //     autoPlay: 5000,
+        //     navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+        // });
+    });
+</script>
