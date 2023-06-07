@@ -1833,6 +1833,10 @@ header #site-header .hd-logo>a {
   display: inline-block;
 }
 
+header .logo {
+  margin-top: 29px;
+}
+
 header #site-header .hd-logo h1 {
   font-size: 0px !important;
   padding: 0px;
