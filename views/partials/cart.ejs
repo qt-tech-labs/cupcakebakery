@@ -1,95 +1,126 @@
 <div id="CartDrawer" class="drawer drawer--right" tabindex="-1">
-    <div class="drawer__header">
-        <div class="drawer__title h3">Giỏ hàng</div>
-        <div class="drawer__close js-drawer-close">
-            <button type="button" class="icon-fallback-text">
-                <span class="icon icon-x" aria-hidden="true"></span>
-                <span class="fallback-text">"Đóng"</span>
-            </button>
+  <div class="drawer__header">
+    <div class="drawer__title h3">Giỏ hàng</div>
+    <div class="drawer__close js-drawer-close">
+      <button type="button" class="icon-fallback-text">
+        <span class="icon icon-x" aria-hidden="true"></span>
+        <span class="fallback-text">"Đóng"</span>
+      </button>
+    </div>
+  </div>
+  <div id="CartContainer">
+    <form action="/cart" method="post" novalidate="" class="cart ajaxcart">
+      <div class="ajaxcart__inner">
+        <div class="ajaxcart__product">
+          <div class="ajaxcart__row" data-line="1">
+            <div class="grid">
+              <div class="grid__item one-quarter">
+                <a
+                  href="/products/caramel-chocolate-mousse-4"
+                  class="ajaxcart__product-image"
+                  ><img
+                    src="https://product.hstatic.net/1000313040/product/frame_fb_3_81d63c5cf4744684bd616be100995d62_small.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="grid__item three-quarters">
+                <p>
+                  <a
+                    href="/products/caramel-chocolate-mousse-4"
+                    class="ajaxcart__product-name"
+                    >CARAMEL CHOCOLATE CAKE MOUSSE</a
+                  >
+                  <span class="ajaxcart__product-meta variant">21 cm</span>
+                </p>
+                <div class="grid--full display-table">
+                  <div class="grid__item display-table-cell one-half">
+                    <div class="ajaxcart__qty">
+                      <button
+                        type="button"
+                        class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text"
+                        data-id="1602574939"
+                        data-qty="0"
+                        data-line="1"
+                      >
+                        <span class="icon icon-minus" aria-hidden="true"></span>
+                        <span class="fallback-text" aria-hidden="true">−</span>
+                        <span class="visually-hidden"
+                          >Giảm số lượng sản phẩm đi 1</span
+                        >
+                      </button>
+                      <input
+                        type="text"
+                        name="updates[]"
+                        class="ajaxcart__qty-num"
+                        value="1"
+                        min="0"
+                        data-id="1602574939"
+                        data-line="1"
+                        aria-label="quantity"
+                        pattern="[0-9]*"
+                      />
+                      <button
+                        type="button"
+                        class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text"
+                        data-id="1602574939"
+                        data-line="1"
+                        data-qty="2"
+                      >
+                        <span class="icon icon-plus" aria-hidden="true"></span>
+                        <span class="fallback-text" aria-hidden="true">+</span>
+                        <span class="visually-hidden"
+                          >Tăng số lượng sản phẩm lên 1</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="grid__item display-table-cell one-half text-right"
+                  >
+                    <span>360,000₫</span>
+                  </div>
+                </div>
+
+                <div class="grid--full display-table">
+                  <div class="grid__item text-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="CartContainer">
-        <form action="/cart" method="post" novalidate="" class="cart ajaxcart">
-            <div class="ajaxcart__inner">
-                <div class="ajaxcart__product">
-                    <div class="ajaxcart__row" data-line="1">
-                        <div class="grid">
-                            <div class="grid__item one-quarter">
-                                <a href="/products/caramel-chocolate-mousse-4" class="ajaxcart__product-image"><img
-                                        src="https://product.hstatic.net/1000313040/product/frame_fb_3_81d63c5cf4744684bd616be100995d62_small.png"
-                                        alt=""></a>
-                            </div>
-                            <div class="grid__item three-quarters">
-                                <p>
-                                    <a href="/products/caramel-chocolate-mousse-4"
-                                        class="ajaxcart__product-name">CARAMEL CHOCOLATE CAKE MOUSSE</a>
-                                    <span class="ajaxcart__product-meta variant">21 cm</span>
-                                </p>
-                                <div class="grid--full display-table">
-                                    <div class="grid__item display-table-cell one-half">
-                                        <div class="ajaxcart__qty">
-                                            <button type="button"
-                                                class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text"
-                                                data-id="1602574939" data-qty="0" data-line="1">
-                                                <span class="icon icon-minus" aria-hidden="true"></span>
-                                                <span class="fallback-text" aria-hidden="true">−</span>
-                                                <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
-                                            </button>
-                                            <input type="text" name="updates[]" class="ajaxcart__qty-num" value="1"
-                                                min="0" data-id="1602574939" data-line="1" aria-label="quantity"
-                                                pattern="[0-9]*">
-                                            <button type="button"
-                                                class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text"
-                                                data-id="1602574939" data-line="1" data-qty="2">
-                                                <span class="icon icon-plus" aria-hidden="true"></span>
-                                                <span class="fallback-text" aria-hidden="true">+</span>
-                                                <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="grid__item display-table-cell one-half text-right">
+      </div>
 
-                                        <!---
-<small class="ajaxcart-item__price-strikethrough hide"><s>NaN₫</s></small>
-<br>
--->
-                                        <span>360,000₫</span>
+      <div>
+        <label for="CartSpecialInstructions"
+          ><strong
+            >Quý khách xin vui lòng nhập thông tin: Họ tên, Ngày tháng năm sinh,
+            Địa chỉ nhận, Thời gian nhận bánh và Số điện thoại liên hệ.</strong
+          ></label
+        >
+        <textarea
+          name="note"
+          class="input-full"
+          id="CartSpecialInstructions"
+        ></textarea>
+      </div>
 
-                                    </div>
-                                </div>
-
-                                <div class="grid--full display-table">
-                                    <div class="grid__item text-right">
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <label for="CartSpecialInstructions"><strong>Quý khách xin vui lòng nhập thông tin: Họ tên, Ngày tháng
-                        năm sinh, Địa chỉ nhận, Thời gian nhận bánh và Số điện thoại liên hệ.</strong></label>
-                <textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
-            </div>
-
-            <div class="ajaxcart__footer">
-                <div class="grid--full">
-                    <div class="grid__item two-thirds">
-                        <p>Tổng tiền</p>
-                    </div>
-                    <div class="grid__item one-third text-right">
-                        <p>360,000₫</p>
-                    </div>
-
-                </div>
-                <button type="submit" class="btn--secondary btn--full cart__checkout" name="checkout">
-                    Thanh toán →
-                </button>
-            </div>
-        </form>
-    </div>
+      <div class="ajaxcart__footer">
+        <div class="grid--full">
+          <div class="grid__item two-thirds">
+            <p>Tổng tiền</p>
+          </div>
+          <div class="grid__item one-third text-right">
+            <p>360,000₫</p>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn--secondary btn--full cart__checkout"
+          name="checkout"
+        >
+          Thanh toán →
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

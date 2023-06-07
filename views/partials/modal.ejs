@@ -1,487 +1,792 @@
-<div class="modal" id="productQuickView" style="display: none; background-color: rgba(0, 0, 0, 0);">
-    <div class="modal-content" style="opacity: 0; transform: translateY(-30px); margin-top: 249px;">
-        <span id="close" class="close">×</span>
-        <form class="grid" id="form-quick-view">
-            <div class="grid__item large--five-tenths">
-                <div class="image-zoom">
-                    <img id="p-product-image-feature" class="p-product-image-feature"
-                        src="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg">
+<div
+  class="modal"
+  id="productQuickView"
+  style="display: none; background-color: rgba(0, 0, 0, 0)"
+>
+  <div
+    class="modal-content"
+    style="opacity: 0; transform: translateY(-30px); margin-top: 249px"
+  >
+    <span id="close" class="close">×</span>
+    <form class="grid" id="form-quick-view">
+      <div class="grid__item large--five-tenths">
+        <div class="image-zoom">
+          <img
+            id="p-product-image-feature"
+            class="p-product-image-feature"
+            src="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg"
+          />
 
-                    <div id="p-sliderproduct">
-                        <ul class="owl-carousel inline-list owl-theme" style="opacity: 1; display: block;">
-                            <div class="owl-wrapper-outer">
-                                <div class="owl-wrapper"
-                                    style="width: 246px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="owl-item" style="width: 123px;">
-                                        <li class="item active"><a href="#"
-                                                data-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_medium.jpg"
-                                                data-zoom-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg"><img
-                                                    data-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_medium.jpg"
-                                                    data-zoom-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg"
-                                                    src="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_small.jpg"></a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-controls clickable" style="display: none;">
-                                <div class="owl-pagination">
-                                    <div class="owl-page"><span class=""></span></div>
-                                </div>
-                                <div class="owl-buttons">
-                                    <div class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                                    <div class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
+          <div id="p-sliderproduct">
+            <ul
+              class="owl-carousel inline-list owl-theme"
+              style="opacity: 1; display: block"
+            >
+              <div class="owl-wrapper-outer">
+                <div
+                  class="owl-wrapper"
+                  style="
+                    width: 246px;
+                    left: 0px;
+                    display: block;
+                    transition: all 0ms ease 0s;
+                    transform: translate3d(0px, 0px, 0px);
+                  "
+                >
+                  <div class="owl-item" style="width: 123px">
+                    <li class="item active">
+                      <a
+                        href="#"
+                        data-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_medium.jpg"
+                        data-zoom-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg"
+                        ><img
+                          data-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_medium.jpg"
+                          data-zoom-image="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_large.jpg"
+                          src="//product.hstatic.net/1000313040/product/qg8a6652_62cafbc7cf4c49b087674cd99474f2d2_small.jpg"
+                      /></a>
+                    </li>
+                  </div>
                 </div>
+              </div>
+              <div class="owl-controls clickable" style="display: none">
+                <div class="owl-pagination">
+                  <div class="owl-page"><span class=""></span></div>
+                </div>
+                <div class="owl-buttons">
+                  <div class="owl-prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </div>
+                  <div class="owl-next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="grid__item large--five-tenths pull-right">
+        <h4 class="p-title modal-title" id="">DELI HEART CAKE</h4>
+        <p class="product-more-info">
+          <span class="product-sku">
+            Mã sản phẩm: <span id="ProductSku">BV010</span>
+          </span>
+        </p>
+        <div class="form-input product-price-wrapper">
+          <div class="product-price">
+            <span class="p-price">360,000₫</span>
+            <del></del>
+          </div>
+          <em id="PriceSaving"></em>
+        </div>
+        <div class="p-option-wrapper">
+          <div class="selector-wrapper">
+            <label>Kích thước</label
+            ><span class="custom-dropdown custom-dropdown--white"
+              ><select
+                class="single-option-selector custom-dropdown__select custom-dropdown__select--white"
+                data-option="option1"
+                id="p-select-quickview-option-0"
+              >
+                <option value="21cm">21cm</option>
+                <option value="23cm">23cm</option>
+                <option value="25 cm">25 cm</option>
+              </select></span
+            >
+          </div>
+          <select
+            name="id"
+            class=""
+            id="p-select-quickview"
+            style="display: none"
+          >
+            <option value="1043994868">21cm - 36000000</option>
+            <option value="1043994869">23cm - 42000000</option>
+            <option value="1073953187">25 cm - 50000000</option>
+          </select>
+        </div>
+        <div id="swatch-quick-view" class="select-swatch">
+          <div
+            id="variant-swatch-0-quickview"
+            class="swatch swatch-quick-view clearfix"
+            data-option="option1"
+            data-option-index="0"
+          >
+            <div class="header">Kích thước</div>
+            <div class="select-swap">
+              <div data-value="21cm" class="n-sd swatch-element 21cm">
+                <input
+                  class="variant-0 input-quickview"
+                  id="qv-swatch-0-21cm"
+                  type="radio"
+                  name="option1"
+                  value="21cm"
+                  checked=""
+                /><label for="qv-swatch-0-21cm" class="sd"
+                  >21cm<img
+                    class="crossed-out"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png" /><img
+                    class="img-check"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"
+                /></label>
+              </div>
+              <div data-value="23cm" class="n-sd swatch-element 23cm">
+                <input
+                  class="variant-0 input-quickview"
+                  id="qv-swatch-0-23cm"
+                  type="radio"
+                  name="option1"
+                  value="23cm"
+                  checked=""
+                /><label for="qv-swatch-0-23cm" class=""
+                  >23cm<img
+                    class="crossed-out"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png" /><img
+                    class="img-check"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"
+                /></label>
+              </div>
+              <div data-value="25 cm" class="n-sd swatch-element 25-cm">
+                <input
+                  class="variant-0 input-quickview"
+                  id="qv-swatch-0-25-cm"
+                  type="radio"
+                  name="option1"
+                  value="25 cm"
+                  checked=""
+                /><label for="qv-swatch-0-25-cm" class=""
+                  >25 cm<img
+                    class="crossed-out"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png" /><img
+                    class="img-check"
+                    src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"
+                /></label>
+              </div>
             </div>
-            <div class="grid__item large--five-tenths pull-right">
-                <h4 class="p-title   modal-title " id="">DELI HEART CAKE</h4>
-                <p class="product-more-info">
-                    <span class="product-sku">
-                        Mã sản phẩm: <span id="ProductSku">BV010</span>
-                    </span>
-                </p>
-                <div class="form-input product-price-wrapper">
-                    <div class="product-price">
-                        <span class="p-price ">360,000₫</span>
-                        <del></del>
-                    </div>
-                    <em id="PriceSaving"></em>
-                </div>
-                <div class="p-option-wrapper">
-                    <div class="selector-wrapper"><label>Kích thước</label><span
-                            class="custom-dropdown custom-dropdown--white"><select
-                                class="single-option-selector custom-dropdown__select custom-dropdown__select--white"
-                                data-option="option1" id="p-select-quickview-option-0">
-                                <option value="21cm">21cm</option>
-                                <option value="23cm">23cm</option>
-                                <option value="25 cm">25 cm</option>
-                            </select></span></div><select name="id" class="" id="p-select-quickview"
-                        style="display: none;">
-                        <option value="1043994868">21cm - 36000000</option>
-                        <option value="1043994869">23cm - 42000000</option>
-                        <option value="1073953187">25 cm - 50000000</option>
-                    </select>
-                </div>
-                <div id="swatch-quick-view" class="select-swatch">
-                    <div id="variant-swatch-0-quickview" class="swatch swatch-quick-view clearfix" data-option="option1"
-                        data-option-index="0">
-                        <div class="header"> Kích thước </div>
-                        <div class="select-swap">
-                            <div data-value="21cm" class="n-sd swatch-element 21cm"><input
-                                    class="variant-0 input-quickview" id="qv-swatch-0-21cm" type="radio" name="option1"
-                                    value="21cm" checked=""><label for="qv-swatch-0-21cm" class="sd">21cm<img
-                                        class="crossed-out"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png"><img
-                                        class="img-check"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"></label></div>
-                            <div data-value="23cm" class="n-sd swatch-element 23cm"><input
-                                    class="variant-0 input-quickview" id="qv-swatch-0-23cm" type="radio" name="option1"
-                                    value="23cm" checked=""><label for="qv-swatch-0-23cm" class="">23cm<img
-                                        class="crossed-out"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png"><img
-                                        class="img-check"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"></label></div>
-                            <div data-value="25 cm" class="n-sd swatch-element 25-cm"><input
-                                    class="variant-0 input-quickview" id="qv-swatch-0-25-cm" type="radio" name="option1"
-                                    value="25 cm" checked=""><label for="qv-swatch-0-25-cm" class="">25 cm<img
-                                        class="crossed-out"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/soldout.png"><img
-                                        class="img-check"
-                                        src="//theme.hstatic.net/1000313040/1000406925/14/select-pro.png"></label></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-input hidden">
-                    <label>Số lượng</label>
-                    <div class="js-qty">
-                        <button type="button" class="js-qty__adjust js-qty__adjust--minus icon-fallback-text" data-id=""
-                            data-qty="0">
-                            <span class="icon icon-minus" aria-hidden="true"></span>
-                            <span class="fallback-text" aria-hidden="true">−</span>
-                            <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
-                        </button>
-                        <input type="text" class="js-qty__num" value="1" min="1" data-id="" aria-label="quantity"
-                            pattern="[0-9]*" name="quantity" id="">
-                        <button type="button" class="js-qty__adjust js-qty__adjust--plus icon-fallback-text" data-id=""
-                            data-qty="11">
-                            <span class="icon icon-plus" aria-hidden="true"></span>
-                            <span class="fallback-text" aria-hidden="true">+</span>
-                            <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="form-input" style="width: 100%">
-                    <button type="submit" class="btn btn-addcart " id="AddToCardQuickView" style="display: block;">Thêm
-                        vào giỏ</button>
-                    <button disabled="" class="btn btn-soldout" style="display: none;">Hết hàng</button>
-                    <div class="qv-readmore">
-                        <span> hoặc </span><a class="read-more p-url" href="/products/deli-heart-cake" role="button">Xem
-                            chi tiết</a>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <!--
+          </div>
+        </div>
+        <div class="form-input hidden">
+          <label>Số lượng</label>
+          <div class="js-qty">
+            <button
+              type="button"
+              class="js-qty__adjust js-qty__adjust--minus icon-fallback-text"
+              data-id=""
+              data-qty="0"
+            >
+              <span class="icon icon-minus" aria-hidden="true"></span>
+              <span class="fallback-text" aria-hidden="true">−</span>
+              <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+            </button>
+            <input
+              type="text"
+              class="js-qty__num"
+              value="1"
+              min="1"
+              data-id=""
+              aria-label="quantity"
+              pattern="[0-9]*"
+              name="quantity"
+              id=""
+            />
+            <button
+              type="button"
+              class="js-qty__adjust js-qty__adjust--plus icon-fallback-text"
+              data-id=""
+              data-qty="11"
+            >
+              <span class="icon icon-plus" aria-hidden="true"></span>
+              <span class="fallback-text" aria-hidden="true">+</span>
+              <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+            </button>
+          </div>
+        </div>
+        <div class="form-input" style="width: 100%">
+          <button
+            type="submit"
+            class="btn btn-addcart"
+            id="AddToCardQuickView"
+            style="display: block"
+          >
+            Thêm vào giỏ
+          </button>
+          <button disabled="" class="btn btn-soldout" style="display: none">
+            Hết hàng
+          </button>
+          <div class="qv-readmore">
+            <span> hoặc </span
+            ><a
+              class="read-more p-url"
+              href="/products/deli-heart-cake"
+              role="button"
+              >Xem chi tiết</a
+            >
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--
 	<div id="loading"><div></div></div>
--->
-</div>
+--></div>
 <script>
-    $('#AddToCardQuickView').on('click', function (e) {
-        e.preventDefault();
-        var self = $(this);
-        jQuery.ajax({
-            type: 'POST',
-            url: '/cart/add.js',
-            async: false,
-            data: jQuery('#form-quick-view').serialize(),
-            dataType: 'json',
-            success: function () {
-                $(".close").trigger('click');
-                $(".js-qty__num").val(1);
-                if (self.hasClass('has-cart')) {
-                    load_cart();
+  $("#AddToCardQuickView").on("click", function (e) {
+    e.preventDefault();
+    var self = $(this);
+    jQuery.ajax({
+      type: "POST",
+      url: "/cart/add.js",
+      async: false,
+      data: jQuery("#form-quick-view").serialize(),
+      dataType: "json",
+      success: function () {
+        $(".close").trigger("click");
+        $(".js-qty__num").val(1);
+        if (self.hasClass("has-cart")) {
+          load_cart();
+        } else {
+          $(".js-drawer-open-right").trigger("click");
+        }
+        load_cart();
+      },
+      error: function (XMLHttpRequest, textStatus) {
+        Haravan.onError(XMLHttpRequest, textStatus);
+      },
+    });
+  });
+  var callBack = function (variant, selector) {
+    if (variant) {
+      modal = $("#productQuickView");
+      $(".p-price").html(Haravan.formatMoney(variant.price, "{{amount}}₫"));
+      if (variant.sku) {
+        $("#ProductSku").html(variant.sku);
+        $(".product-sku").show();
+      } else {
+        $(".product-sku").hide();
+      }
+      if (variant.compare_at_price - variant.price > 0) {
+        $("#PriceSaving").html(
+          "(Bạn đã tích kiệm được " +
+            Haravan.formatMoney(
+              variant.compare_at_price - variant.price,
+              "{{amount}}₫"
+            ) +
+            ")"
+        );
+      } else {
+        $("#PriceSaving").html("");
+      }
+      if (variant.compare_at_price > 0)
+        modal
+          .find("del")
+          .html(Haravan.formatMoney(variant.compare_at_price, "{{amount}}₫"));
+      else modal.find("del").html("");
+      if (variant.available) {
+        modal.find(".btn-addcart").css("display", "block");
+        modal.find(".btn-soldout").css("display", "none");
+        if (variant.featured_image) {
+          var newImg = variant.featured_image,
+            el = $(".p-product-image-feature")[0];
+          Haravan.Image.switchImage(newImg, el, timber.switchImage);
+        }
+        check_variant_quickview = true;
+      } else {
+        modal.find(".btn-addcart").css("display", "none");
+        modal.find(".btn-soldout").css("display", "block");
+      }
+    } else {
+      modal.find(".btn-addcart").css("display", "none");
+      modal.find(".btn-soldout").css("display", "block");
+      check_variant_quickview = false;
+    }
+  };
+  var p_select_data = $(".p-option-wrapper").html();
+  var p_zoom = $(".image-zoom").html();
+  var quickViewProduct = function (purl) {
+    if ($(window).width() < 680) {
+      window.location = purl;
+      return false;
+    }
+    modal = $("#productQuickView");
+    $.ajax({
+      url: purl + ".js",
+      async: false,
+      success: function (product) {
+        $.each(product.options, function (i, v) {
+          product.options[i] = v.name;
+        });
+        modal.find(".p-title").html(product.title);
+        modal.find(".p-option-wrapper").html(p_select_data);
+        modal.find("#swatch-quick-view").html("");
+        $(".image-zoom").html(p_zoom);
+        modal.find(".p-url").attr("href", product.url);
+
+        $.each(product.variants, function (i, v) {
+          modal
+            .find("select#p-select-quickview")
+            .append(
+              "<option value='" +
+                v.id +
+                "'>" +
+                v.title +
+                " - " +
+                v.price +
+                "</option>"
+            );
+        });
+        if (
+          product.variants.length == 1 &&
+          product.variants[0].title.indexOf("Default") != -1
+        )
+          $(".p-option-wrapper").hide();
+        else $(".p-option-wrapper").show();
+        if (
+          product.variants.length == 1 &&
+          product.variants[0].title.indexOf("Default") != -1
+        ) {
+          callBack(product.variants[0], null);
+        } else {
+          new Haravan.OptionSelectors("p-select-quickview", {
+            product: product,
+            onVariantSelected: callBack,
+          });
+          if (
+            product.options.length == 1 &&
+            product.options[0].indexOf("Tiêu đề") == -1
+          )
+            modal
+              .find(".selector-wrapper:eq(0)")
+              .prepend("<label>" + product.options[0] + "</label>");
+          $(".p-option-wrapper select:not(#p-select-quickview)").each(
+            function () {
+              $(this).wrap(
+                '<span class="custom-dropdown custom-dropdown--white"></span>'
+              );
+              $(this).addClass(
+                "custom-dropdown__select custom-dropdown__select--white"
+              );
+            }
+          );
+          var filePath = window.file_url.substring(
+            0,
+            window.file_url.lastIndexOf("?")
+          );
+          var assetUrl = window.asset_url.substring(
+            0,
+            window.asset_url.lastIndexOf("?")
+          );
+
+          product.options.forEach(function (item) {});
+          var variantSwatch = "";
+          for (var j = 0; j < product.options.length; j++) {
+            var option_index = j;
+            var op_index_plus = option_index + 1;
+            var swatch = product.options[option_index];
+            variantSwatch +=
+              '<div id="variant-swatch-' +
+              option_index +
+              '-quickview" class="swatch swatch-quick-view clearfix" data-option="option' +
+              op_index_plus +
+              '" data-option-index="' +
+              option_index +
+              '">';
+            variantSwatch +=
+              '<div class="header"> ' +
+              product.options[j] +
+              ' </div><div class="select-swap">';
+            var is_color = false;
+            if (
+              product.options[j] == "Màu sắc" ||
+              product.options[j] == "Màu"
+            ) {
+              is_color = true;
+            }
+            var values = "";
+            for (var i = 0; i < product.variants.length; i++) {
+              var value = convertToSlug(
+                product.variants[i].options[option_index]
+              ); //value handle
+              var _value = product.variants[i].options[option_index];
+
+              if (values.indexOf(value) < 0) {
+                values += ",";
+                values += "," + value;
+                values = values.split(",");
+                if (is_color) {
+                  variantSwatch +=
+                    '<div data-value="' +
+                    _value +
+                    '" class="n-sd swatch-element color ' +
+                    value;
                 } else {
-                    $('.js-drawer-open-right').trigger('click');
+                  variantSwatch +=
+                    '<div data-value="' +
+                    _value +
+                    '" class="n-sd swatch-element ' +
+                    value;
                 }
-                load_cart();
-            },
-            error: function (XMLHttpRequest, textStatus) {
-                Haravan.onError(XMLHttpRequest, textStatus);
-            }
-        });
-    });
-    var callBack = function (variant, selector) {
-        if (variant) {
-            modal = $('#productQuickView');
-            $('.p-price').html(Haravan.formatMoney(variant.price, "{{amount}}₫"));
-            if (variant.sku) {
-                $('#ProductSku').html(variant.sku);
-                $('.product-sku').show();
-            } else {
-                $('.product-sku').hide();
-            }
-            if (variant.compare_at_price - variant.price > 0) {
-                $('#PriceSaving').html('(Bạn đã tích kiệm được ' + Haravan.formatMoney(variant.compare_at_price - variant.price, "{{amount}}₫") + ')')
-            } else {
-                $('#PriceSaving').html('')
-            }
-            if (variant.compare_at_price > 0)
-                modal.find('del').html(Haravan.formatMoney(variant.compare_at_price, "{{amount}}₫"));
-            else
-                modal.find('del').html('');
-            if (variant.available) {
-                modal.find('.btn-addcart').css('display', 'block');
-                modal.find('.btn-soldout').css('display', 'none');
-                if (variant.featured_image) {
-                    var newImg = variant.featured_image,
-                        el = $('.p-product-image-feature')[0];
-                    Haravan.Image.switchImage(newImg, el, timber.switchImage);
+
+                if (option_index == 2) {
+                  variantSwatch += 'variant-3">';
+                } else {
+                  variantSwatch += '">';
                 }
-                check_variant_quickview = true;
-            }
-            else {
-                modal.find('.btn-addcart').css('display', 'none');
-                modal.find('.btn-soldout').css('display', 'block');
 
-            }
-        }
-        else {
-            modal.find('.btn-addcart').css('display', 'none');
-            modal.find('.btn-soldout').css('display', 'block');
-            check_variant_quickview = false;
-
-        }
-    }
-    var p_select_data = $('.p-option-wrapper').html();
-    var p_zoom = $('.image-zoom').html();
-    var quickViewProduct = function (purl) {
-
-        if ($(window).width() < 680) { window.location = purl; return false; }
-        modal = $('#productQuickView');
-        $.ajax({
-            url: purl + '.js',
-            async: false,
-            success: function (product) {
-                $.each(product.options, function (i, v) {
-                    product.options[i] = v.name;
-                })
-                modal.find('.p-title').html(product.title);
-                modal.find('.p-option-wrapper').html(p_select_data);
-                modal.find('#swatch-quick-view').html('');
-                $('.image-zoom').html(p_zoom);
-                modal.find('.p-url').attr('href', product.url);
-
-                $.each(product.variants, function (i, v) {
-                    modal.find('select#p-select-quickview').append("<option value='" + v.id + "'>" + v.title + ' - ' + v.price + "</option>");
-                })
-                if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1)
-                    $('.p-option-wrapper').hide();
-                else
-                    $('.p-option-wrapper').show();
-                if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1) {
-                    callBack(product.variants[0], null);
+                variantSwatch +=
+                  '<input class="variant-' +
+                  option_index +
+                  ' input-quickview" id="qv-swatch-' +
+                  option_index +
+                  "-" +
+                  value +
+                  '" type="radio" name="option' +
+                  op_index_plus +
+                  '" value="' +
+                  _value +
+                  '"';
+                if (j == 0) {
+                  variantSwatch += " checked/>";
+                } else {
+                  variantSwatch += " />";
                 }
-                else {
-                    new Haravan.OptionSelectors("p-select-quickview", { product: product, onVariantSelected: callBack });
-                    if (product.options.length == 1 && product.options[0].indexOf('Tiêu đề') == -1)
-                        modal.find('.selector-wrapper:eq(0)').prepend('<label>' + product.options[0] + '</label>');
-                    $('.p-option-wrapper select:not(#p-select-quickview)').each(function () {
-                        $(this).wrap('<span class="custom-dropdown custom-dropdown--white"></span>');
-                        $(this).addClass("custom-dropdown__select custom-dropdown__select--white");
-                    });
-                    var filePath = window.file_url.substring(0, window.file_url.lastIndexOf('?'));
-                    var assetUrl = window.asset_url.substring(0, window.asset_url.lastIndexOf('?'));
 
-                    product.options.forEach(function (item) {
-
-                    })
-                    var variantSwatch = '';
-                    for (var j = 0; j < product.options.length; j++) {
-                        var option_index = j;
-                        var op_index_plus = option_index + 1;
-                        var swatch = product.options[option_index];
-                        variantSwatch += '<div id="variant-swatch-' + option_index + '-quickview" class="swatch swatch-quick-view clearfix" data-option="option' + op_index_plus + '" data-option-index="' + option_index + '">';
-                        variantSwatch += '<div class="header"> ' + product.options[j] + ' </div><div class="select-swap">';
-                        var is_color = false;
-                        if (product.options[j] == "Màu sắc" || product.options[j] == "Màu") {
-                            is_color = true;
-                        }
-                        var values = '';
-                        for (var i = 0; i < product.variants.length; i++) {
-                            var value = convertToSlug(product.variants[i].options[option_index]); //value handle 
-                            var _value = product.variants[i].options[option_index];
-
-                            if (values.indexOf(value) < 0) {
-                                values += ',';
-                                values += ',' + value;
-                                values = values.split(',');
-                                if (is_color) {
-                                    variantSwatch += '<div data-value="' + _value + '" class="n-sd swatch-element color ' + value;
-
-                                } else {
-                                    variantSwatch += '<div data-value="' + _value + '" class="n-sd swatch-element ' + value;
-                                }
-
-                                if (option_index == 2) {
-                                    variantSwatch += 'variant-3">';
-                                } else {
-                                    variantSwatch += '">';
-                                }
-
-                                variantSwatch += '<input class="variant-' + option_index + ' input-quickview" id="qv-swatch-' + option_index + '-' + value + '" type="radio" name="option' + op_index_plus + '" value="' + _value + '"';
-                                if (j == 0) {
-                                    variantSwatch += ' checked/>';
-                                } else {
-                                    variantSwatch += ' />';
-                                }
-
-                                if (is_color) {
-                                    var img_url = '';
-                                    if (product.variants[i].featured_image != null) {
-                                        img_url = Haravan.resizeImage(product.variants[i].featured_image.src, 'thumb');
-                                    }
-                                    if (img_url !== '') {
-                                        if (img_url.indexOf('noDefaultImage6') < 0) {
-                                            variantSwatch += '<label class="' + value + ' has-thumb" for="qv-swatch-' + option_index + '-' + value + '" style="background: url(' + img_url + ') top left no-repeat" >';
-                                        } else {
-                                            variantSwatch += '<label class="' + value + ' no-thumb" for="qv-swatch-' + option_index + '-' + value + '">';
-                                        }
-                                    }
-                                    variantSwatch += '	<span>' + _value + '</span><img class="crossed-out" src="' + assetUrl + 'soldout.png" /><img class="img-check" src="' + assetUrl + 'select-pro.png" /></label>';
-
-                                } else {
-                                    variantSwatch += '<label for="qv-swatch-' + option_index + '-' + value + '">' + _value + '<img class="crossed-out" src="' + assetUrl + 'soldout.png" /><img class="img-check" src="' + assetUrl + 'select-pro.png" /></label>';
-                                }
-                                //console.log(variantSwatch);
-                                //console.log(product.variants[i])
-                                variantSwatch += '</div>';
-                            }
-                        }
-
-                        variantSwatch += '</div>';
-                        variantSwatch += '</div>';
-                    }
-
-                    modal.find('#swatch-quick-view').html(variantSwatch);
-
-                    callBack(product.variants[0], null);
-                    callFirstVariantQuickView();
-                }
-                if (product.images.length == 0) {
-                    modal.find('.p-product-image-feature').attr('src', '//hstatic.net/0/0/global/noDefaultImage6_large.gif');
-                }
-                else {
-                    $('#p-sliderproduct').remove();
-                    $('.image-zoom').append("<div id='p-sliderproduct'>");
-                    $('#p-sliderproduct').append("<ul class='owl-carousel inline-list'>");
-                    $.each(product.images, function (i, v) {
-                        elem = $('<li class="item">').append('<a href="#" data-image="" data-zoom-image=""><img /></a>');
-                        elem.find('a').attr('data-image', Haravan.resizeImage(v, 'medium'));
-                        elem.find('a').attr('data-zoom-image', Haravan.resizeImage(v, 'large'));
-                        elem.find('img').attr('data-image', Haravan.resizeImage(v, 'medium'));
-                        elem.find('img').attr('data-zoom-image', Haravan.resizeImage(v, 'large'));
-                        elem.find('img').attr('src', Haravan.resizeImage(v, 'small'));
-                        modal.find('.owl-carousel').append(elem);
-                    });
-                    var owl = $('#p-sliderproduct .owl-carousel');
-                    owl.owlCarousel({
-                        items: 3,
-                        navigation: true,
-                        navigationText: [navRightText, navLeftText]
-                    });
-                    $('#p-sliderproduct .owl-carousel .owl-item').first().children('.item').addClass('active');
-                    modal.find('.p-product-image-feature').attr('src', Haravan.resizeImage(product.featured_image, 'large'));
-                    $(".modal-footer .btn-readmore").attr('href', purl);
-                }
-            }
-        });
-
-        return false;
-    }
-    $('#productQuickView').on('click', '.item img', function (event) {
-        event.preventDefault();
-        modal = $('#quick-view-modal');
-        modal.find('.p-product-image-feature').attr('src', $(this).attr('data-zoom-image'));
-        modal.find('.item').removeClass('active');
-        $(this).parents('li').addClass('active');
-        return false;
-    });
-
-    $(function () {
-        $('#close').click(function () {
-            $('#productQuickView .modal-content').css('opacity', '0');
-            $('#productQuickView .modal-content').css('transform', 'translateY(-30px)');
-            $('#productQuickView').css('background-color', 'rgba(0,0,0,0)');
-            setTimeout(function () {
-                $('#productQuickView').hide();
-            }, 500);
-            document.getElementById("form-quick-view").reset();
-        })
-        window.onclick = function (event) {
-            if (event.target == document.getElementById('productQuickView')) {
-                $('#productQuickView .modal-content').css('opacity', '0');
-                $('#productQuickView .modal-content').css('transform', 'translateY(-30px)');
-                $('#productQuickView').css('background-color', 'rgba(0,0,0,0)');
-                setTimeout(function () {
-                    $('#productQuickView').hide();
-                }, 500);
-                document.getElementById("form-quick-view").reset();
-            }
-        }
-    })
-    $(document).on("click", ".quick-view", function (event) {
-        event.preventDefault();
-
-        if (!quickViewProduct($(this).attr('data-handle'))) {
-            if ($(window).width() > 680) {
-                $('#productQuickView .modal-content').css('opacity', '1');
-                $('#productQuickView').show();
-                $('#productQuickView').css('background-color', 'rgba(0,0,0,0.4)');
-                //	$('#loading').show();
-
-                var images = $("#productQuickView img");
-                var loadedImgNum = 0;
-
-                images.on('load', function () {
-                    loadedImgNum += 1;
-                    if (loadedImgNum == images.length) {
-                        var topPQZ = ($('#productQuickView').height() - $('.modal-content').height()) / 2;
-                        //$('#loading').hide();
-                        $('#productQuickView .modal-content').css('opacity', '1');
-                        $('#productQuickView .modal-content').css('transform', 'translateY(0)');
-                        $('#productQuickView .modal-content').css('margin-top', topPQZ - 50);
-                    }
-                });
-            }
-            $('#p-sliderproduct a').on('click', function (evt) {
-                evt.preventDefault();
-                var newImage = $(this).data('zoom-image');
-                $('.p-product-image-feature').attr('src', newImage);
-            });
-        }
-    });
-
-
-    function callFirstVariantQuickView() {
-        var _chage = '';
-        $('#productQuickView .swatch-element[data-value="' + $('.selector-wrapper .single-option-selector').eq(0).val() + '"]').find('input').click();
-        $('#productQuickView .swatch-element[data-value="' + $('.selector-wrapper .single-option-selector').eq(1).val() + '"]').find('input').click();
-        if (swatch_size == 2) {
-            var _avi_op1 = '';
-            var _avi_op2 = '';
-            var _count = $('#variant-swatch-1-quickview .swatch-element').size();
-            $('#variant-swatch-0-quickview .swatch-element').each(function (ind, value) {
-                var _key = $(this).data('value');
-                var _unavi = 0;
-                $('#productQuickView .single-option-selector').eq(0).val(_key).change();
-                $('#variant-swatch-1-quickview .swatch-element').each(function (i, v) {
-                    var _val = $(this).data('value');
-                    $('#productQuickView .single-option-selector').eq(1).val(_val).change();
-                    if (check_variant_quickview == true) {
-                        if (_avi_op1 == '') {
-                            _avi_op1 = _key;
-                        }
-                        if (_avi_op2 == '') {
-                            _avi_op2 = _val;
-                        }
+                if (is_color) {
+                  var img_url = "";
+                  if (product.variants[i].featured_image != null) {
+                    img_url = Haravan.resizeImage(
+                      product.variants[i].featured_image.src,
+                      "thumb"
+                    );
+                  }
+                  if (img_url !== "") {
+                    if (img_url.indexOf("noDefaultImage6") < 0) {
+                      variantSwatch +=
+                        '<label class="' +
+                        value +
+                        ' has-thumb" for="qv-swatch-' +
+                        option_index +
+                        "-" +
+                        value +
+                        '" style="background: url(' +
+                        img_url +
+                        ') top left no-repeat" >';
                     } else {
-                        _unavi += 1;
+                      variantSwatch +=
+                        '<label class="' +
+                        value +
+                        ' no-thumb" for="qv-swatch-' +
+                        option_index +
+                        "-" +
+                        value +
+                        '">';
                     }
-                })
-                if (_unavi == _count) {
-                    $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _key + '"]').addClass('soldout');
-                    $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _key + '"]').find('input').attr('disabled', 'disabled');
+                  }
+                  variantSwatch +=
+                    "	<span>" +
+                    _value +
+                    '</span><img class="crossed-out" src="' +
+                    assetUrl +
+                    'soldout.png" /><img class="img-check" src="' +
+                    assetUrl +
+                    'select-pro.png" /></label>';
+                } else {
+                  variantSwatch +=
+                    '<label for="qv-swatch-' +
+                    option_index +
+                    "-" +
+                    value +
+                    '">' +
+                    _value +
+                    '<img class="crossed-out" src="' +
+                    assetUrl +
+                    'soldout.png" /><img class="img-check" src="' +
+                    assetUrl +
+                    'select-pro.png" /></label>';
                 }
-            })
-            $('#variant-swatch-1-quickview .swatch-element[data-value = "' + _avi_op2 + '"] input').click();
-            $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _avi_op1 + '"] input').click();
-        } else if (swatch_size == 3) {
-            var _avi_op1 = '';
-            var _avi_op2 = '';
-            var _avi_op3 = '';
-            var _size_op2 = $('#variant-swatch-1-quickview .swatch-element').size();
-            var _size_op3 = $('#variant-swatch-2-quickview .swatch-element').size();
+                //console.log(variantSwatch);
+                //console.log(product.variants[i])
+                variantSwatch += "</div>";
+              }
+            }
 
-            $('#variant-swatch-0-quickview .swatch-element').each(function (ind, value) {
-                var _key_va1 = $(this).data('value');
-                var _count_unavi = 0;
-                $('#productQuickView .single-option-selector').eq(0).val(_key_va1).change();
-                $('#variant-swatch-1-quickview .swatch-element').each(function (i, v) {
-                    var _key_va2 = $(this).data('value');
-                    var _unavi_2 = 0;
-                    $('#productQuickView .single-option-selector').eq(1).val(_key_va2).change();
-                    $('#variant-swatch-2-quickview .swatch-element').each(function (j, z) {
-                        var _key_va3 = $(this).data('value');
-                        $('#productQuickView .single-option-selector').eq(2).val(_key_va3).change();
-                        if (check_variant_quickview == true) {
-                            if (_avi_op1 == '') {
-                                _avi_op1 = _key_va1;
-                            }
-                            if (_avi_op2 == '') {
-                                _avi_op2 = _key_va2;
-                            }
-                            if (_avi_op3 == '') {
-                                _avi_op3 = _key_va3;
-                            }
-                        } else {
-                            _unavi_2 += 1;
-                        }
-                    })
-                    if (_unavi_2 == _size_op3) {
-                        _count_unavi += 1;
-                    }
-                })
-                if (_size_op2 == _count_unavi) {
-                    $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _key_va1 + '"]').addClass('soldout');
-                    $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _key_va1 + '"]').find('input').attr('disabled', 'disabled');
-                }
-            })
-            $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _avi_op1 + '"] input').click();
+            variantSwatch += "</div>";
+            variantSwatch += "</div>";
+          }
+
+          modal.find("#swatch-quick-view").html(variantSwatch);
+
+          callBack(product.variants[0], null);
+          callFirstVariantQuickView();
         }
-        var img_ = $('#variant-swatch-0-quickview .swatch-element[data-value = "' + _avi_op1 + '"] input').data('img-src');
+        if (product.images.length == 0) {
+          modal
+            .find(".p-product-image-feature")
+            .attr("src", "//hstatic.net/0/0/global/noDefaultImage6_large.gif");
+        } else {
+          $("#p-sliderproduct").remove();
+          $(".image-zoom").append("<div id='p-sliderproduct'>");
+          $("#p-sliderproduct").append("<ul class='owl-carousel inline-list'>");
+          $.each(product.images, function (i, v) {
+            elem = $('<li class="item">').append(
+              '<a href="#" data-image="" data-zoom-image=""><img /></a>'
+            );
+            elem.find("a").attr("data-image", Haravan.resizeImage(v, "medium"));
+            elem
+              .find("a")
+              .attr("data-zoom-image", Haravan.resizeImage(v, "large"));
+            elem
+              .find("img")
+              .attr("data-image", Haravan.resizeImage(v, "medium"));
+            elem
+              .find("img")
+              .attr("data-zoom-image", Haravan.resizeImage(v, "large"));
+            elem.find("img").attr("src", Haravan.resizeImage(v, "small"));
+            modal.find(".owl-carousel").append(elem);
+          });
+          var owl = $("#p-sliderproduct .owl-carousel");
+          owl.owlCarousel({
+            items: 3,
+            navigation: true,
+            navigationText: [navRightText, navLeftText],
+          });
+          $("#p-sliderproduct .owl-carousel .owl-item")
+            .first()
+            .children(".item")
+            .addClass("active");
+          modal
+            .find(".p-product-image-feature")
+            .attr("src", Haravan.resizeImage(product.featured_image, "large"));
+          $(".modal-footer .btn-readmore").attr("href", purl);
+        }
+      },
+    });
+
+    return false;
+  };
+  $("#productQuickView").on("click", ".item img", function (event) {
+    event.preventDefault();
+    modal = $("#quick-view-modal");
+    modal
+      .find(".p-product-image-feature")
+      .attr("src", $(this).attr("data-zoom-image"));
+    modal.find(".item").removeClass("active");
+    $(this).parents("li").addClass("active");
+    return false;
+  });
+
+  $(function () {
+    $("#close").click(function () {
+      $("#productQuickView .modal-content").css("opacity", "0");
+      $("#productQuickView .modal-content").css(
+        "transform",
+        "translateY(-30px)"
+      );
+      $("#productQuickView").css("background-color", "rgba(0,0,0,0)");
+      setTimeout(function () {
+        $("#productQuickView").hide();
+      }, 500);
+      document.getElementById("form-quick-view").reset();
+    });
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("productQuickView")) {
+        $("#productQuickView .modal-content").css("opacity", "0");
+        $("#productQuickView .modal-content").css(
+          "transform",
+          "translateY(-30px)"
+        );
+        $("#productQuickView").css("background-color", "rgba(0,0,0,0)");
+        setTimeout(function () {
+          $("#productQuickView").hide();
+        }, 500);
+        document.getElementById("form-quick-view").reset();
+      }
+    };
+  });
+  $(document).on("click", ".quick-view", function (event) {
+    event.preventDefault();
+
+    if (!quickViewProduct($(this).attr("data-handle"))) {
+      if ($(window).width() > 680) {
+        $("#productQuickView .modal-content").css("opacity", "1");
+        $("#productQuickView").show();
+        $("#productQuickView").css("background-color", "rgba(0,0,0,0.4)");
+        //	$('#loading').show();
+
+        var images = $("#productQuickView img");
+        var loadedImgNum = 0;
+
+        images.on("load", function () {
+          loadedImgNum += 1;
+          if (loadedImgNum == images.length) {
+            var topPQZ =
+              ($("#productQuickView").height() - $(".modal-content").height()) /
+              2;
+            //$('#loading').hide();
+            $("#productQuickView .modal-content").css("opacity", "1");
+            $("#productQuickView .modal-content").css(
+              "transform",
+              "translateY(0)"
+            );
+            $("#productQuickView .modal-content").css(
+              "margin-top",
+              topPQZ - 50
+            );
+          }
+        });
+      }
+      $("#p-sliderproduct a").on("click", function (evt) {
+        evt.preventDefault();
+        var newImage = $(this).data("zoom-image");
+        $(".p-product-image-feature").attr("src", newImage);
+      });
     }
+  });
+
+  function callFirstVariantQuickView() {
+    var _chage = "";
+    $(
+      '#productQuickView .swatch-element[data-value="' +
+        $(".selector-wrapper .single-option-selector").eq(0).val() +
+        '"]'
+    )
+      .find("input")
+      .click();
+    $(
+      '#productQuickView .swatch-element[data-value="' +
+        $(".selector-wrapper .single-option-selector").eq(1).val() +
+        '"]'
+    )
+      .find("input")
+      .click();
+    if (swatch_size == 2) {
+      var _avi_op1 = "";
+      var _avi_op2 = "";
+      var _count = $("#variant-swatch-1-quickview .swatch-element").size();
+      $("#variant-swatch-0-quickview .swatch-element").each(function (
+        ind,
+        value
+      ) {
+        var _key = $(this).data("value");
+        var _unavi = 0;
+        $("#productQuickView .single-option-selector").eq(0).val(_key).change();
+        $("#variant-swatch-1-quickview .swatch-element").each(function (i, v) {
+          var _val = $(this).data("value");
+          $("#productQuickView .single-option-selector")
+            .eq(1)
+            .val(_val)
+            .change();
+          if (check_variant_quickview == true) {
+            if (_avi_op1 == "") {
+              _avi_op1 = _key;
+            }
+            if (_avi_op2 == "") {
+              _avi_op2 = _val;
+            }
+          } else {
+            _unavi += 1;
+          }
+        });
+        if (_unavi == _count) {
+          $(
+            '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+              _key +
+              '"]'
+          ).addClass("soldout");
+          $(
+            '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+              _key +
+              '"]'
+          )
+            .find("input")
+            .attr("disabled", "disabled");
+        }
+      });
+      $(
+        '#variant-swatch-1-quickview .swatch-element[data-value = "' +
+          _avi_op2 +
+          '"] input'
+      ).click();
+      $(
+        '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+          _avi_op1 +
+          '"] input'
+      ).click();
+    } else if (swatch_size == 3) {
+      var _avi_op1 = "";
+      var _avi_op2 = "";
+      var _avi_op3 = "";
+      var _size_op2 = $("#variant-swatch-1-quickview .swatch-element").size();
+      var _size_op3 = $("#variant-swatch-2-quickview .swatch-element").size();
+
+      $("#variant-swatch-0-quickview .swatch-element").each(function (
+        ind,
+        value
+      ) {
+        var _key_va1 = $(this).data("value");
+        var _count_unavi = 0;
+        $("#productQuickView .single-option-selector")
+          .eq(0)
+          .val(_key_va1)
+          .change();
+        $("#variant-swatch-1-quickview .swatch-element").each(function (i, v) {
+          var _key_va2 = $(this).data("value");
+          var _unavi_2 = 0;
+          $("#productQuickView .single-option-selector")
+            .eq(1)
+            .val(_key_va2)
+            .change();
+          $("#variant-swatch-2-quickview .swatch-element").each(function (
+            j,
+            z
+          ) {
+            var _key_va3 = $(this).data("value");
+            $("#productQuickView .single-option-selector")
+              .eq(2)
+              .val(_key_va3)
+              .change();
+            if (check_variant_quickview == true) {
+              if (_avi_op1 == "") {
+                _avi_op1 = _key_va1;
+              }
+              if (_avi_op2 == "") {
+                _avi_op2 = _key_va2;
+              }
+              if (_avi_op3 == "") {
+                _avi_op3 = _key_va3;
+              }
+            } else {
+              _unavi_2 += 1;
+            }
+          });
+          if (_unavi_2 == _size_op3) {
+            _count_unavi += 1;
+          }
+        });
+        if (_size_op2 == _count_unavi) {
+          $(
+            '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+              _key_va1 +
+              '"]'
+          ).addClass("soldout");
+          $(
+            '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+              _key_va1 +
+              '"]'
+          )
+            .find("input")
+            .attr("disabled", "disabled");
+        }
+      });
+      $(
+        '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+          _avi_op1 +
+          '"] input'
+      ).click();
+    }
+    var img_ = $(
+      '#variant-swatch-0-quickview .swatch-element[data-value = "' +
+        _avi_op1 +
+        '"] input'
+    ).data("img-src");
+  }
 </script>
